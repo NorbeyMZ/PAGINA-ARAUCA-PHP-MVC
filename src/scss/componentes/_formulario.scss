@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario {
+    width: 100%;
+ 
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+   
+    label{
+        flex: 0 0 10rem;
+    }
+    input{
+        flex: 1;
+        border: none;
+        padding: calc(v.$separacion / 4);
+        border-radius: 1rem;
+        &:disabled{
+            background-color: lighten(v.$azul, 30%);
+            color: v.$negro;
+            cursor: not-allowed;
+
+        }
+    }
+
+    textarea{
+        width: 100%;
+        height: auto;
+        field-sizing: content;
+        border-radius: 1rem;
+        min-height: 10rem;
+    }
+}
+

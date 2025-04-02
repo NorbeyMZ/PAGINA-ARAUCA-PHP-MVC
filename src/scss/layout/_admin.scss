@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.reservas{
+    list-style:none ;
+    padding: 0;
+
+
+    li{
+        padding: 1rem;
+        border-top: 5px solid v.$dorado;
+        p{
+            font-weight: bold;
+            color: v.$azul;
+        }
+        span,
+        .servicio{
+            font-weight: v.$regular;
+            color: v.$blanco;
+            
+        }
+
+        .precio-servicio{
+            font-weight: bold;
+        }
+        .precio-total{
+            font-weight: bold;
+            color: v.$rojo;
+        }
+    }
+}
+
+.servicios-admin{
+    @extend .reservas;
+
+
+   
+    .acciones{
+        margin:0 ;
+        
+    }
+    .boton,
+    .boton-eliminar{
+       margin-top: 1rem;
+    }
+
+}
+
+.imagen-servicio-admin{
+        width: 100svh;
+        margin-top: 1rem;
+        border: none;
+        overflow: hidden;
+        object-fit: cover;
+    
+    @include m.tablet{
+        width: 100svh;
+       
+        margin-top: 1rem;
+        border: none;
+        overflow: hidden;
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: auto;
+        } 
+    }
+}
+.iframe-mapa{
+    width: 100%;
+    height: 40rem;
+    margin-top: 1rem;
+    border: none;
+    overflow: hidden;
+}
+
+
+
+
+//tabla usuarios

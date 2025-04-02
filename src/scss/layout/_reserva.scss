@@ -1,0 +1,102 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+// formulario de reservas 
+
+.body-reservas{
+    background-color: v.$azuloscuro;
+    width: 100%;
+    margin: auto;
+    @include m.desktop{
+        width: 80%;
+        margin: auto;
+    }
+
+    h2,h1{
+        color:v.$dorado;
+    }
+}
+
+
+.barra{
+    margin-top: 0;
+    
+
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p{
+        text-transform: uppercase
+    }
+    .boton{
+        @include m.boton(v.$azuloscuro, v.$blanco);
+    }
+ 
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.seccion{
+    padding:5rem 0;
+    display: none;
+    
+}
+.mostrar {
+    display: block;
+}
+.oculatar{
+    display: none;
+}
+.contenedor-reservas{
+    margin: 2rem;
+}
+.informacion-reserva{
+    width:  100%;
+    @include m.tablet{
+        width:60% ;
+        margin: auto;
+    }
+    .contenedor-formulario-reservas{
+      
+        @include m.tablet{
+            width: 100%;
+            margin: auto;
+        }
+    }
+}
+
+
+
+.contenedor-servicio-info{
+    width:100%;
+    margin: auto;
+    @include m.tablet{
+        width:90%;
+        margin: auto;
+    }
+
+    .imagen-servicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        .img-servicio{
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .iframe-mapa{
+        width:100%;
+        height: 40rem;
+    }
+
+
+}

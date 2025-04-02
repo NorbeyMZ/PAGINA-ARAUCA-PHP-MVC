@@ -1,0 +1,25 @@
+{
+    "name": "norbey/paginaarauca",
+    "description": "proyecto universidad",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controller\\": "./controllers",
+            "Model\\": "./models",
+            "Classes\\":"./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Norbey",
+            "email": "norbeymz2000@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "intervention/image": "^3.11",
+        "mpdf/mpdf": "^8.2",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
