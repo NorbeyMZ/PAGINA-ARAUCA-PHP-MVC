@@ -18,7 +18,7 @@
     ?>
     
 
-    <script src="https://cdn.tiny.cloud/1/q9xk5dob746t7kf13lv32kjdhnc2o9wd8hdguz3xo3x50pc2/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+   <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
     tinymce.init({
         selector: '#descripcion',
