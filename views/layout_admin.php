@@ -18,18 +18,10 @@
     ?>
     
 
-   <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-    tinymce.init({
-        selector: '#descripcion',
-        menubar: false,
-        plugins: 'advlist autolink lists link charmap preview',
-        toolbar: 'undo redo | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat',
-        width:'100%',
-    });
-</script>
-
-
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('descripcion');
+    </script>
 
 </body>
 </html>
